@@ -87,6 +87,7 @@ def main():
     # 获取最新优选IP
     ip_addresses_str = get_cf_speed_test_ip()
     ip_addresses = ip_addresses_str.split(',')
+    print('dns_name:', CF_DNS_NAME)
     dns_records = get_dns_records(CF_DNS_NAME)
     push_plus_content = []
     # 遍历 IP 地址列表
